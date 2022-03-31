@@ -1,13 +1,6 @@
 package edu.miu.waa.lab1.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.Getter;
-
-@Data
-@AllArgsConstructor
-@Getter
-public class Post {
+public class PostV2 {
 
     private long id;
     private String title;
