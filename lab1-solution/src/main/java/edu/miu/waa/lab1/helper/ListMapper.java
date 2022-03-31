@@ -1,5 +1,6 @@
 package edu.miu.waa.lab1.helper;
 
+import edu.miu.waa.lab1.model.dto.PostDto;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -14,8 +15,12 @@ public class ListMapper<T, E> {
     ModelMapper modelMapper;
 
     public List<?> mapList(List<T> list, E convertTo){
-        return list.stream()
+        System.out.println("Helper ....?");
+       return list.stream()
                 .map(e -> modelMapper.map(e, convertTo.getClass()))
                 .collect(Collectors.toList());
+
+
+
     }
 }
