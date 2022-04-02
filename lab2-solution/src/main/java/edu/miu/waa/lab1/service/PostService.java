@@ -1,5 +1,6 @@
 package edu.miu.waa.lab1.service;
 
+import edu.miu.waa.lab1.model.Comment;
 import edu.miu.waa.lab1.model.Post;
 import edu.miu.waa.lab1.model.PostV2;
 import edu.miu.waa.lab1.model.dto.Content;
@@ -18,6 +19,7 @@ public interface PostService {
     void deleteById(long id);
     void updateById(long id, ContentDto contentDto);
     Content getContentByPostId(long id);
+    public void addComment(long postId,  Comment comment);
 
 
 }

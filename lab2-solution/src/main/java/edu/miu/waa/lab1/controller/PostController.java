@@ -1,4 +1,5 @@
 package edu.miu.waa.lab1.controller;
+import edu.miu.waa.lab1.model.Comment;
 import edu.miu.waa.lab1.model.Post;
 import edu.miu.waa.lab1.model.dto.Content;
 import edu.miu.waa.lab1.model.dto.ContentDto;
@@ -39,8 +40,9 @@ public class PostController {
 //    }
 
     @GetMapping("/{id}")
-    public ResponseEntity<PostDto> findById(@PathVariable("id") int id){
-      return ResponseEntity.ok(postService.findById(id));
+    public PostDto findById(@PathVariable("id") int id){
+        System.out.println(("controller*********************"));
+      return postService.findById(id);
     }
 
     @GetMapping("/{id}/content")
@@ -59,6 +61,12 @@ public class PostController {
     public void updateById(@PathVariable int id, @RequestBody ContentDto contentDto) {
         postService.updateById(id, contentDto);
     }
+
+    @PostMapping("/{postId}/comments")
+    public void addComment(@PathVariable("postId") long postId, @RequestBody Comment comment){
+                  postService.addComment(postId, comment);
+    }
+
 
 
 }

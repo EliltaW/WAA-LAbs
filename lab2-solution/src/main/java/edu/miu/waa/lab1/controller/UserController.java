@@ -44,10 +44,7 @@ public class UserController {
       userService.addPost(userId, post);
     }
 
-//    @GetMapping
-//    public List<UserDto> usersWithMoreThanOnePost(){
-//        return null;
-//    }
+
 
 
 }

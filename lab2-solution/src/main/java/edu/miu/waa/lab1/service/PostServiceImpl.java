@@ -1,7 +1,9 @@
 package edu.miu.waa.lab1.service;
 
 import edu.miu.waa.lab1.helper.ListMapper;
+import edu.miu.waa.lab1.model.Comment;
 import edu.miu.waa.lab1.model.Post;
+import edu.miu.waa.lab1.model.User;
 import edu.miu.waa.lab1.model.dto.Content;
 import edu.miu.waa.lab1.model.dto.ContentDto;
 import edu.miu.waa.lab1.model.dto.PostDto;
@@ -10,6 +12,8 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import java.util.List;
 
@@ -49,13 +53,16 @@ public class PostServiceImpl implements PostService{
 
     @Override
     public PostDto findById(long id) {
+        System.out.println("PostServiceImpl class******************************************" + postRepo.findById(id));
 
-        return modelMapper.map(postRepo.findById(id), PostDto.class);
+        PostDto postDto =  modelMapper.map(postRepo.findById(id).orElse(null), PostDto.class);
+        System.out.println(postDto.getTitle());
+        return postDto;
     }
 
     @Override
     public void savePost(PostDto post) {
-        System.out.println("Service...#############" + post);
+       // System.out.println("Service...#############" + post);
         postRepo.save(modelMapper.map(post, Post.class));
     }
 
@@ -79,5 +86,26 @@ public class PostServiceImpl implements PostService{
     @Override
     public Content getContentByPostId(long id) {
         return modelMapper.map(postRepo.findById(id), Content.class);
+    }
+
+    @Override
+    public void addComment(long postId,  Comment comment){
+     Post post = postRepo.getById(postId);
+     List<Comment> comments = post.getComments();
+     comments.add(comment);
+     post.setComments(comments);
+     postRepo.save(post);
+
+
+
+
+//        System.out.println("before adding to the list" + post);
+//        User user = userRepo.getUserById(userId);
+//        List<Post> posts = user.getPosts();
+//        posts.add(modelMapper.map(post, Post.class));
+//        user.setPosts(posts);
+//        System.out.println("***");
+//        System.out.println(user);
+//        userRepo.save(user);
     }
 }
