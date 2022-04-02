@@ -4,51 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77bd5e8f-2bb6-4d51-9227-2a78f664ee5e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1-.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1-t.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/Lab1Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/controller/PostController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/helper/ListMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/model/Post.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/model/dto/Content.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/model/dto/ContentDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/model/dto/PostDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/repo/PostRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/repo/PostRepoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/service/PostService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/service/PostServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/miu/waa/lab1/Lab1ApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/miu/waa/lab1/Lab1Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/miu/waa/lab1/controller/PostController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/miu/waa/lab1/helper/ListMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/miu/waa/lab1/model/Post.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/miu/waa/lab1/model/PostV2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/miu/waa/lab1/model/dto/Content.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/miu/waa/lab1/model/dto/ContentDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/miu/waa/lab1/model/dto/PostDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/miu/waa/lab1/repo/PostRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/miu/waa/lab1/repo/PostRepoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/miu/waa/lab1/service/PostService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/miu/waa/lab1/service/PostServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/miu/waa/lab1/Lab1ApplicationTests.class" beforeDir="false" />
-    </list>
+    <list default="true" id="81487403-5a56-49a0-9530-09c4af0e0908" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,19 +21,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="27AkkKDyqyJ4QVhzY68IB2fZ0SF" />
+  <component name="ProjectId" id="274f0V0zSDm8mGZivxhaQFcJmAV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="1" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -93,7 +50,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunManager">
     <configuration name="Lab1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -107,18 +64,24 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="77bd5e8f-2bb6-4d51-9227-2a78f664ee5e" name="Changes" comment="" />
-      <created>1648770420797</created>
+      <changelist id="81487403-5a56-49a0-9530-09c4af0e0908" name="Changes" comment="" />
+      <created>1648584055651</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1648770420797</updated>
-      <workItem from="1648770422180" duration="12849000" />
-      <workItem from="1648825837303" duration="9624000" />
+      <updated>1648584055651</updated>
+      <workItem from="1648584059174" duration="8571000" />
+      <workItem from="1648665532539" duration="33256000" />
+      <workItem from="1648840528462" duration="30191000" />
+      <workItem from="1648914460244" duration="127000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -130,8 +93,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/lab2_solution$Lab1Application.ic" NAME="Lab1Application Coverage Results" MODIFIED="1648777867360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
