@@ -5,17 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81487403-5a56-49a0-9530-09c4af0e0908" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/model/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/repo/CommentRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/service/CommentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/service/CommentServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/controller/PostController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/model/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/model/Post.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/repo/PostRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/repo/PostRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/repo/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/repo/UserRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/service/PostService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/service/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/service/PostServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/service/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +29,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="lab2" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -62,6 +65,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunManager">
@@ -85,7 +89,7 @@
       <workItem from="1648665532539" duration="33256000" />
       <workItem from="1648840528462" duration="30191000" />
       <workItem from="1648914460244" duration="127000" />
-      <workItem from="1648916676730" duration="11293000" />
+      <workItem from="1648916676730" duration="21940000" />
     </task>
     <servers />
   </component>

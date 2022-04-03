@@ -29,19 +29,34 @@ public class UserController {
         return userService.findAllUsers();
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/posts")
+    public List<UserDto> findUserByPostTitle(String title){
+        return null;
+    }
+
+    @GetMapping("/{id}/user")
     public UserDto getUserById(@PathVariable("id") long id){
         return userService.getUserById(id);
     }
 
-    @GetMapping("{id}/posts")
+    @DeleteMapping("/{id}")
+    public void deleteUserById(@PathVariable("id") long userId){
+        userService.deleteUserById(userId);
+    }
+
+    @GetMapping("{id}/getposts")
     public List<PostDto> getPostByUserId(@PathVariable("id") long id){
         return userService.getPostByUserId(id);
     }
 
-      @PostMapping("/{userId}")
+      @PostMapping("/{userId}/addpost")
     public void addPost(@PathVariable("userId") long userId, @RequestBody PostDto post) {
       userService.addPost(userId, post);
+    }
+
+    @GetMapping("/{num}")
+    public List<User> usersHavingPostsMoreThanN(@PathVariable("num") int num){
+        return userService.usersHavingPostsMoreThanN(num);
     }
 
 

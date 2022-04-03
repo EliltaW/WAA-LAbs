@@ -61,6 +61,11 @@ public class PostServiceImpl implements PostService{
     }
 
     @Override
+    public List<PostDto> findPostByTitle(String title) {
+        return (List<PostDto>) listMapperPostToDto.mapList(postRepo.findPostByTitle(title), new PostDto());
+    }
+
+    @Override
     public void savePost(PostDto post) {
        // System.out.println("Service...#############" + post);
         postRepo.save(modelMapper.map(post, Post.class));

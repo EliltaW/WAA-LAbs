@@ -10,9 +10,12 @@ import java.util.List;
 public interface UserService {
     void save(UserDto user);
     List<UserDto> findAllUsers();
+    List<UserDto> findUserByPostTitle(String title);
     UserDto getUserById(long id);
     List<PostDto> getPostByUserId(long id);
-    public void addPost(long userId, PostDto post);
+     void addPost(long userId, PostDto post);
+     void deleteUserById(long id);
+    public List<User> usersHavingPostsMoreThanN(int num);
 
 
 

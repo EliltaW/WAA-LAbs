@@ -29,7 +29,7 @@ public class PostController {
 
     @ResponseStatus(HttpStatus.OK)
     @GetMapping
-    public List<PostDto> findAll(){
+    public List<PostDto> findAllPosts(){
         return postService.findAll();
     }
 
@@ -40,9 +40,14 @@ public class PostController {
 //    }
 
     @GetMapping("/{id}")
-    public PostDto findById(@PathVariable("id") int id){
+    public PostDto findPostsById(@PathVariable("id") int id){
         System.out.println(("controller*********************"));
       return postService.findById(id);
+    }
+
+    @GetMapping("/")
+    public List<PostDto> findPostByTitle(@RequestParam String title){
+        return postService.findPostByTitle(title);
     }
 
     @GetMapping("/{id}/content")
@@ -51,19 +56,19 @@ public class PostController {
     }
 
     @DeleteMapping("/{id}")
-    public void deleteById(@PathVariable("id") int id){
+    public void deletePostById(@PathVariable("id") int id){
         postService.deleteById(id);
     }
 
 
     @ResponseStatus(HttpStatus.OK)
     @PutMapping("/{id}")
-    public void updateById(@PathVariable int id, @RequestBody ContentDto contentDto) {
+    public void updatePostById(@PathVariable int id, @RequestBody ContentDto contentDto) {
         postService.updateById(id, contentDto);
     }
 
     @PostMapping("/{postId}/comments")
-    public void addComment(@PathVariable("postId") long postId, @RequestBody Comment comment){
+    public void addCommentToPost(@PathVariable("postId") long postId, @RequestBody Comment comment){
                   postService.addComment(postId, comment);
     }
 

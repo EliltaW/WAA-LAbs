@@ -17,6 +17,16 @@ public interface UserRepo extends JpaRepository<User, Long> {
     @Query(value ="select u.posts from User u where u.id = :id")
     List<Post> getPostByUserId(long id);
 
+    @Query(value = "select u from User u where u.posts.size>:num")
+    List<User> getUsersByPostsIsGreaterThanNum(int num);
+
+   // @Query(value = "select u from User u u.posts p where p.title:=title")
+    List<UserDto> findUserByPostsTitle(String title);
+
+
+
+    //void deleteUserById(long id);
+
 //    @Query(value = "select u from User u where u.getPost > :num )
 //    List<UserDto> getUsersByPostsIsGreaterThanOne(int num);
 

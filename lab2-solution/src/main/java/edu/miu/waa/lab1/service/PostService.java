@@ -15,6 +15,7 @@ public interface PostService {
    // List<PostV2> findAllV2();
    List<Post> findByAuthor(String author);
     PostDto findById(long id);
+   List<PostDto> findPostByTitle(String title);
     void savePost(PostDto post);
     void deleteById(long id);
     void updateById(long id, ContentDto contentDto);

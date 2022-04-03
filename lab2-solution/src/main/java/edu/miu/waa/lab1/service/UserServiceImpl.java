@@ -43,10 +43,17 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
+    public List<UserDto> findUserByPostTitle(String title) {
+        return userRepo.findUserByPostsTitle(title);
+    }
+
+    @Override
     public UserDto getUserById(long id) {
 
         return modelMapper.map(userRepo.getUserById(id), UserDto.class);
     }
+
+
 
     @Override
     public List<PostDto> getPostByUserId(long id) {
@@ -66,5 +73,15 @@ public class UserServiceImpl implements UserService{
         System.out.println(user);
         userRepo.save(user);
 
+    }
+
+    @Override
+    public void deleteUserById(long id) {
+        userRepo.deleteById(id);
+    }
+
+    @Override
+    public List<User> usersHavingPostsMoreThanN(int num) {
+        return userRepo.getUsersByPostsIsGreaterThanNum(num);
     }
 }
