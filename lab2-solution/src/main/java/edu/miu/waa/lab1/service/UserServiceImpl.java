@@ -44,7 +44,7 @@ public class UserServiceImpl implements UserService{
 
     @Override
     public List<UserDto> findUserByPostTitle(String title) {
-        return userRepo.findUserByPostsTitle(title);
+        return (List<UserDto>)listMapperUserToDto.mapList(userRepo.findUserByPostsTitle(title), new UserDto());
     }
 
     @Override

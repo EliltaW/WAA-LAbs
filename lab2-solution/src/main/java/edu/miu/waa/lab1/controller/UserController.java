@@ -1,6 +1,7 @@
 package edu.miu.waa.lab1.controller;
 
 
+import edu.miu.waa.lab1.aspect.annotations.ExecutionTime;
 import edu.miu.waa.lab1.model.Post;
 import edu.miu.waa.lab1.model.User;
 import edu.miu.waa.lab1.model.dto.PostDto;
@@ -30,10 +31,11 @@ public class UserController {
     }
 
     @GetMapping("/posts")
-    public List<UserDto> findUserByPostTitle(String title){
-        return null;
+    public List<UserDto> findUserByPostTitle(@RequestParam String title){
+        return userService.findUserByPostTitle(title);
     }
 
+    @ExecutionTime
     @GetMapping("/{id}/user")
     public UserDto getUserById(@PathVariable("id") long id){
         return userService.getUserById(id);
