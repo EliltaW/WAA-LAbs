@@ -1,6 +1,5 @@
 package edu.miu.waa.lab1.controller;
 import edu.miu.waa.lab1.model.Comment;
-import edu.miu.waa.lab1.model.Post;
 import edu.miu.waa.lab1.model.dto.Content;
 import edu.miu.waa.lab1.model.dto.ContentDto;
 import edu.miu.waa.lab1.model.dto.PostDto;

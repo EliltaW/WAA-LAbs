@@ -12,6 +12,7 @@ import java.util.List;
 @Repository
 public interface UserRepo extends JpaRepository<User, Long> {
 
+    User findByEmail(String email);
     User getUserById(long id);
 
     @Query(value ="select u.posts from User u where u.id = :id")

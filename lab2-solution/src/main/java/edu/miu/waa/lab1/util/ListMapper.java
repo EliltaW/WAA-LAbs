@@ -1,6 +1,5 @@
-package edu.miu.waa.lab1.helper;
+package edu.miu.waa.lab1.util;
 
-import edu.miu.waa.lab1.model.dto.PostDto;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

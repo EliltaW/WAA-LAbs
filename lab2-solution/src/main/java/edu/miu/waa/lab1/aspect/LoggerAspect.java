@@ -11,13 +11,17 @@ import org.springframework.stereotype.Component;
 @Component
 public class LoggerAspect {
 
+@Pointcut("@annotation( edu.miu.waa.lab1.aspect.annotations.LogMe )")
+    public void logMeAnnotation(){
+
+    }
 
     @Pointcut("execution(* edu.miu.waa.lab1.controller.UserController.*(..))")
     public void logMe() {
 
     }
 
-    @Before("logMe()")
+    @Before("logMe() || logMeAnnotation()")
     public void logBefore(JoinPoint joinPoint) {
         System.out.println("Before" + joinPoint.getSignature().getName());
     }

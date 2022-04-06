@@ -5,14 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81487403-5a56-49a0-9530-09c4af0e0908" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/aspect/LoggerAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/aspect/annotations/ExecutionTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/aspect/annotations/LogMe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/model/Logger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/configuration/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/filter/JwtFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/model/dto/request/LoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/model/dto/request/RefreshTokenRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/model/dto/response/LoginResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/service/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/service/impl/AuthServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/service/impl/AwesomeUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/service/impl/AwesomeUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/util/JwtUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/aspect/LoggerAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/aspect/LoggerAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/controller/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/helper/ListMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/util/ListMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/repo/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/repo/UserRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/service/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/service/impl/CommentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/service/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/service/impl/PostServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +35,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -90,7 +103,8 @@
       <workItem from="1648840528462" duration="30191000" />
       <workItem from="1648914460244" duration="127000" />
       <workItem from="1648916676730" duration="25222000" />
-      <workItem from="1649088278402" duration="5334000" />
+      <workItem from="1649088278402" duration="7295000" />
+      <workItem from="1649220605300" duration="5530000" />
     </task>
     <servers />
   </component>

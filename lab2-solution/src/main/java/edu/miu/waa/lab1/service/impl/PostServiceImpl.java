@@ -1,9 +1,9 @@
-package edu.miu.waa.lab1.service;
+package edu.miu.waa.lab1.service.impl;
 
-import edu.miu.waa.lab1.helper.ListMapper;
+import edu.miu.waa.lab1.service.PostService;
+import edu.miu.waa.lab1.util.ListMapper;
 import edu.miu.waa.lab1.model.Comment;
 import edu.miu.waa.lab1.model.Post;
-import edu.miu.waa.lab1.model.User;
 import edu.miu.waa.lab1.model.dto.Content;
 import edu.miu.waa.lab1.model.dto.ContentDto;
 import edu.miu.waa.lab1.model.dto.PostDto;
@@ -12,13 +12,11 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import java.util.List;
 
 @Service
-public class PostServiceImpl implements PostService{
+public class PostServiceImpl implements PostService {
 
     @Autowired
     ModelMapper modelMapper;
