@@ -20,10 +20,10 @@ public class Logger {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long transactionId;
-
-    private LocalDate date;
-    private long time;
-    private String principle;
     private String Operation;
+    private LocalDate date;
+    private String principle;
+    private long time;
+
 
 }

@@ -21,7 +21,7 @@ public class LoggerAspect {
     @Autowired
     LoggerRepo loggerRepo;
 
-    Logger logger;
+    Logger logger = new Logger();
 
     @Pointcut("@annotation(edu.miu.waa.lab1.aspect.annotations.ExecutionTime)")
     public void annotationPointcut() {
@@ -39,7 +39,7 @@ public class LoggerAspect {
                 //LocalTime.now();
 
 
-         logger = new Logger(logger.getTransactionId() + count, LocalDate.now(), endTime - startTime, "fake user", proceedingJoinPoint.getSignature().getName());
+         logger = new Logger(logger.getTransactionId() + count,  proceedingJoinPoint.getSignature().getName(),  LocalDate.now(), "fake user", endTime - startTime);
         loggerRepo.save(logger);
 
     }
