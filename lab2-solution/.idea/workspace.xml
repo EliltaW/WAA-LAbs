@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81487403-5a56-49a0-9530-09c4af0e0908" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/aspect/LoggerAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/aspect/annotations/ExecutionTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/aspect/annotations/LogMe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/model/Logger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/repo/LoggerRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/repo/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/repo/UserRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/aspect/LoggerAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/aspect/LoggerAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/model/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/model/Logger.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,16 +18,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="AnnotationType" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="lab2" />
+        <entry key="$PROJECT_DIR$/.." value="lab5" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
