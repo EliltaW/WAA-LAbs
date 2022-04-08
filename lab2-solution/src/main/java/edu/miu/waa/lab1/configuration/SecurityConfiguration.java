@@ -31,19 +31,20 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
-//        http
-//                .csrf().disable()
-//                .authorizeRequests()
-//                .antMatchers("/api/v1/authenticate/**").permitAll()
-////                .antMatchers("/api/v1/products").permitAll()
-//                .antMatchers("/api/v1/products").hasAuthority("CLIENT")
-//                .anyRequest()
-//                .authenticated()
-//                .and()
-//                .sessionManagement()
-//                .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
-//
-//        http.addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
+        http
+                .csrf().disable()
+                .authorizeRequests()
+                .antMatchers("/api/v1/authenticate/**").permitAll()
+//                .antMatchers("/api/v1/users").permitAll()
+                .antMatchers("/api/v1/users/**", "/api/v1/posts/**").hasAuthority("ADMIN")
+                .antMatchers("/api/v1/posts/**").hasAuthority("CLIENT")
+                .anyRequest()
+                .authenticated()
+                .and()
+                .sessionManagement()
+                .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+
+        http.addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
 
     }
 
