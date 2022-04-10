@@ -34,10 +34,9 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         http
                 .csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/api/v1/authenticate/**").permitAll()
-//                .antMatchers("/api/v1/users").permitAll()
-                .antMatchers("/api/v1/users/**", "/api/v1/posts/**").hasAuthority("ADMIN")
-                .antMatchers("/api/v1/posts/**").hasAuthority("CLIENT")
+                .antMatchers("/api/v1/authenticate").permitAll()
+                .antMatchers("/api/v1/users**").hasAuthority("ADMIN")
+                .antMatchers( "/api/v1/posts**").hasAnyAuthority("ADMIN", "CLIENT")
                 .anyRequest()
                 .authenticated()
                 .and()
