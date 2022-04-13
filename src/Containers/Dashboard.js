@@ -7,9 +7,27 @@ export default function Dashboard() {
     { id: 113, title: "Enjoy Life", author: "JAsmine" },
   ]);
 
+  const onChange = (events) => {
+    // const copy = { ...postsState };
+    // copy[events.target.name] = events.target.value;
+    // setPostsState(copy);
+  };
+
   return (
     <div>
       <Posts posts={postsState} />
+      <div>
+        <input
+          type={"text"}
+          label={"title"}
+          name={"title"}
+          onChange={(event) => {
+            onChange(event);
+          }}
+          value={postsState.title}
+        />
+        <button>Edit Title</button>
+      </div>
     </div>
   );
 }
