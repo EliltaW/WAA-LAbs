@@ -1,6 +1,7 @@
 import Posts from "./Posts/posts";
 
 import { useState } from "react";
+import PostDetails from "../Components/PostDetails/PostDetails";
 
 export default function Dashboard() {
   const [clickedPost, setClickedPost] = useState({});
@@ -17,6 +18,10 @@ export default function Dashboard() {
   return (
     <div>
       <Posts setSelected={setSelected} handleClickedPost={handleClickedPost} />
+      <div>
+        <PostDetails id={selectedState} />
+      </div>
+
       <div>
         <input
           type={"text"}
