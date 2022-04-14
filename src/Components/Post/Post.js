@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 const Post = (props) => {
   return (
     <div className="Content">
