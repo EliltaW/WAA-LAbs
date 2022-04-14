@@ -1,4 +1,5 @@
 import Post from "../../Components/Post/Post";
+import { useEffect } from "react";
 const Posts = (props) => {
   const postList = props.posts.map((post) => {
     return (
