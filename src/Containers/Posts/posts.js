@@ -34,9 +34,9 @@ const Posts = (props) => {
           key={post.post_id}
           onClick={props.onClick}
           // handleClickedPost={props.handleClickedPost}
-          setSelected={() => {
-            props.setSelected(post.post_id);
-          }}
+          // setSelected={() => {
+          //   props.setSelected(post.post_id);
+          // }}
         />
       </div>
     );

@@ -1,17 +1,30 @@
+import { useContext } from "react";
+import { Selected } from "../../Store/Selected";
+
 const Post = (props) => {
+  const setSelected = useContext(Selected);
+
   return (
-    // <button
-    //   onClick={() => {
-    //     props.handleClickedPost(props.id, props.title, props.author);
-    //   }}
-    // >
-    <div className="Content" onClick={props.setSelected}>
-      <div>{props.id}</div>
-      <div>{props.title}</div>
-      <div>{props.author}</div>
+    <div
+      className="Content"
+      onClick={() => {
+        setSelected(props.id);
+      }}
+    >
+      <div className="Field">
+        <div>{props.id}</div>
+        <div>{props.title}</div>
+        <div>{props.author}</div>
+      </div>
     </div>
     // </button>
   );
 };
 
 export default Post;
+
+// <button
+//   onClick={() => {
+//     props.handleClickedPost(props.id, props.title, props.author);
+//   }}
+// >

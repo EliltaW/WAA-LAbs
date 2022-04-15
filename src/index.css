@@ -12,23 +12,27 @@ code {
     monospace;
 }
 
-.Product {
+.Post {
   display: flex;
-  flex-flow:column;
+  flex-flow:row wrap;
   justify-content: center;
   width: 80%;
   margin: auto;
+  display:inline-flex;
 }
 
 .Content {
   width: 200px;
+  height: 200px;
   padding: 16px;
   text-align: center;
   border: 1px solid #eee;
-  box-shadow: 0 2px 3px #ccc;
-  margin:auto;
+  box-sizing: border-box;
+  margin:10px;
   box-sizing: border-box;
   cursor: pointer;
+  display:inline-block;
+  
   
 }
 

@@ -3,6 +3,7 @@ import Posts from "./Posts/posts";
 import { useState } from "react";
 import PostDetails from "../Components/PostDetails/PostDetails";
 import NewPost from "../Components/NewPost/NewPost";
+import { Selected } from "../Store/Selected";
 
 export default function Dashboard() {
   // const [clickedPost, setClickedPost] = useState({});
@@ -17,40 +18,23 @@ export default function Dashboard() {
   const changeFetchFlag = (id) => {
     setFetchFlag(!fetchFlag);
   };
-  // const handleClickedPost = (id, title, author) => {
-  //   setClickedPost({ id, title, author });
-  // };
 
   return (
-    <div>
-      <Posts setSelected={setSelected} fetchFlag={fetchFlag} />
-      <div className="Product">
-        <PostDetails id={selectedState} changeFetchFlag={changeFetchFlag} />
-      </div>
+    <div className="Post">
+      <Selected.Provider value={setSelected}>
+        <fieldset className="form">
+          <div>
+            <Posts fetchFlag={fetchFlag} />
+          </div>
+          <div>
+            <PostDetails id={selectedState} changeFetchFlag={changeFetchFlag} />
+          </div>
 
-      <br></br>
-
-      <div>
-        <NewPost changeFetchFlag={changeFetchFlag} />
-      </div>
-      <br></br>
-      <div>
-        <input
-          type={"text"}
-          label={"title"}
-          name={"title"}
-          // value={postsState.title}
-        />
-        <button>Edit Title</button>
-      </div>
-      {/* {Object.keys(clickedPost).length !== 0 ? (
-        <div>
-          New Component {clickedPost.id} {clickedPost.title}{" "}
-          {clickedPost.author}
-        </div>
-      ) : (
-        ""
-      )} */}
+          <div>
+            <NewPost changeFetchFlag={changeFetchFlag} />
+          </div>
+        </fieldset>
+      </Selected.Provider>
     </div>
   );
 }
@@ -78,3 +62,16 @@ export default function Dashboard() {
 // const copy = { ...newPostState };
 // copy[events.target.name] = events.target.value;
 // setNewPostState(copy);
+
+//  { {Object.keys(clickedPost).length !== 0 ? (
+//         <div>
+//           New Component {clickedPost.id} {clickedPost.title}{" "}
+//           {clickedPost.author}
+//         </div>
+//       ) : (
+//         ""
+//       )} }
+
+// const handleClickedPost = (id, title, author) => {
+//   setClickedPost({ id, title, author });
+// };
