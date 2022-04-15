@@ -22,7 +22,7 @@ const Posts = (props) => {
   };
   useEffect(() => {
     fetchPosts();
-  }, []);
+  }, [props.fetchFlag]);
 
   const postList = postsState.map((post) => {
     return (
@@ -33,7 +33,7 @@ const Posts = (props) => {
           id={post.post_id}
           key={post.post_id}
           onClick={props.onClick}
-          handleClickedPost={props.handleClickedPost}
+          // handleClickedPost={props.handleClickedPost}
           setSelected={() => {
             props.setSelected(post.post_id);
           }}

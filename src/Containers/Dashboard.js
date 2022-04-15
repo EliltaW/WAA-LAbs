@@ -2,26 +2,38 @@ import Posts from "./Posts/posts";
 
 import { useState } from "react";
 import PostDetails from "../Components/PostDetails/PostDetails";
+import NewPost from "../Components/NewPost/NewPost";
 
 export default function Dashboard() {
-  const [clickedPost, setClickedPost] = useState({});
+  // const [clickedPost, setClickedPost] = useState({});
+  const [fetchFlag, setFetchFlag] = useState(true);
   const [selectedState, setSelectedState] = useState(0);
 
   const setSelected = (id) => {
     setSelectedState(id);
     console.log(selectedState);
   };
-  const handleClickedPost = (id, title, author) => {
-    setClickedPost({ id, title, author });
+
+  const changeFetchFlag = (id) => {
+    setFetchFlag(!fetchFlag);
   };
+  // const handleClickedPost = (id, title, author) => {
+  //   setClickedPost({ id, title, author });
+  // };
 
   return (
     <div>
-      <Posts setSelected={setSelected} handleClickedPost={handleClickedPost} />
-      <div>
-        <PostDetails id={selectedState} />
+      <Posts setSelected={setSelected} fetchFlag={fetchFlag} />
+      <div className="Product">
+        <PostDetails id={selectedState} changeFetchFlag={changeFetchFlag} />
       </div>
 
+      <br></br>
+
+      <div>
+        <NewPost changeFetchFlag={changeFetchFlag} />
+      </div>
+      <br></br>
       <div>
         <input
           type={"text"}
@@ -31,14 +43,14 @@ export default function Dashboard() {
         />
         <button>Edit Title</button>
       </div>
-      {Object.keys(clickedPost).length !== 0 ? (
+      {/* {Object.keys(clickedPost).length !== 0 ? (
         <div>
           New Component {clickedPost.id} {clickedPost.title}{" "}
           {clickedPost.author}
         </div>
       ) : (
         ""
-      )}
+      )} */}
     </div>
   );
 }
