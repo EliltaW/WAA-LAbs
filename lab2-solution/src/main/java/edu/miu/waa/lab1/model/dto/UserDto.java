@@ -16,8 +16,8 @@ public class UserDto {
     private Long id;
     @JsonProperty("user_name")
     private String name;
-//    @JsonProperty("post_list")
-//    private List<PostDto> posts;
+    @JsonProperty("post_list")
+    private List<PostDto> posts;
 
 
 

@@ -7,13 +7,13 @@
     <list default="true" id="81487403-5a56-49a0-9530-09c4af0e0908" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/controller/PostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/model/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/model/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/model/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/model/dto/UserDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/repo/PostRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/repo/PostRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/repo/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/repo/UserRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/service/PostService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/service/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/service/PostServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/miu/waa/lab1/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

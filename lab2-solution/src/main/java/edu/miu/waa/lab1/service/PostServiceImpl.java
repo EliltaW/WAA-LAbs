@@ -113,4 +113,9 @@ public class PostServiceImpl implements PostService{
 //        System.out.println(user);
 //        userRepo.save(user);
     }
+
+    @Override
+    public List<Comment> getCommentByPostId(long postId) {
+        return postRepo.getCommentByPostId(postId);
+    }
 }

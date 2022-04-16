@@ -6,6 +6,7 @@ import edu.miu.waa.lab1.model.PostV2;
 import edu.miu.waa.lab1.model.dto.Content;
 import edu.miu.waa.lab1.model.dto.ContentDto;
 import edu.miu.waa.lab1.model.dto.PostDto;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
@@ -20,7 +21,8 @@ public interface PostService {
     void deleteById(long id);
     void updateById(long id, ContentDto contentDto);
     Content getContentByPostId(long id);
-    public void addComment(long postId,  Comment comment);
+     void addComment(long postId,  Comment comment);
+     List<Comment> getCommentByPostId(long postId);
 
 
 }

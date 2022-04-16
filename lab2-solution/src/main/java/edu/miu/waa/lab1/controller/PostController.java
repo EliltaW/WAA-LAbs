@@ -14,6 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/posts")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class PostController {
 
     PostService postService;
@@ -70,6 +71,11 @@ public class PostController {
     @PostMapping("/{postId}/comments")
     public void addCommentToPost(@PathVariable("postId") long postId, @RequestBody Comment comment){
                   postService.addComment(postId, comment);
+    }
+
+    @GetMapping("/{postId}/comments")
+    public List<Comment> getCommentByPostId(@PathVariable("postId")long postId){
+        return postService.getCommentByPostId(postId);
     }
 
 
