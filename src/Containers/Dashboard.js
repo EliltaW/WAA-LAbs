@@ -1,5 +1,5 @@
 import Posts from "./Posts/posts";
-
+import "../index.css";
 import { useState } from "react";
 import PostDetails from "../Components/PostDetails/PostDetails";
 import NewPost from "../Components/NewPost/NewPost";

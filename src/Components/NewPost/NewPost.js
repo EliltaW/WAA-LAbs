@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useRef } from "react";
+import "./NewPost.css";
 
 const NewPost = (props) => {
   // const [postState, setPostState] = useState({

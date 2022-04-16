@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { Selected } from "../../Store/Selected";
-
+import "../../index.css";
 const Post = (props) => {
   const setSelected = useContext(Selected);
 

@@ -1,15 +1,18 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import Content from "../Content/Content";
+import Comment from "../Comment/Comment";
+import "./PostDetails.css";
 
 const PostDetails = (props) => {
   const [postDetail, setPostDetail] = useState({});
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/api/v1/posts/" + props.id + "/content")
+      .get("http://localhost:8080/api/v1/posts/" + props.id + "/comments")
       .then((response) => {
+        console.log(response.data);
         setPostDetail(response.data);
+        console.log(postDetail);
       })
       .catch((err) => console.log(err.message));
   }, [props.id]);
@@ -30,10 +33,16 @@ const PostDetails = (props) => {
         <div>Post Detail</div>
         <h1>{postDetail.name}</h1>
         <div>
-          Contents
-          {postDetail.content != null
-            ? postDetail.content.map((cont) => {
-                return <Content content={cont.Content} key={cont.id} />;
+          Comment
+          {postDetail.comment != null
+            ? postDetail.comment.map((cont) => {
+                return (
+                  <Comment
+                    name={cont.name}
+                    comment={cont.comment}
+                    key={cont.id}
+                  />
+                );
               })
             : null}
         </div>
