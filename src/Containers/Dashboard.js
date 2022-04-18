@@ -1,41 +1,22 @@
-import Posts from "./Posts/posts";
 import "../index.css";
-import { useState } from "react";
-import PostDetails from "../Components/PostDetails/PostDetails";
-import NewPost from "../Components/NewPost/NewPost";
-import { Selected } from "../Store/Selected";
+import "../Containers/Header/Header.css";
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import PageRoutes from "../Pages/PageRoutes";
+import Header from "./Header/Header";
 
 export default function Dashboard() {
-  // const [clickedPost, setClickedPost] = useState({});
-  const [fetchFlag, setFetchFlag] = useState(true);
-  const [selectedState, setSelectedState] = useState(0);
-
-  const setSelected = (id) => {
-    setSelectedState(id);
-    console.log(selectedState);
-  };
-
-  const changeFetchFlag = (id) => {
-    setFetchFlag(!fetchFlag);
-  };
-
   return (
-    <div className="Post">
-      <Selected.Provider value={setSelected}>
-        <fieldset className="form">
-          <div>
-            <Posts fetchFlag={fetchFlag} />
-          </div>
-          <div>
-            <PostDetails id={selectedState} changeFetchFlag={changeFetchFlag} />
-          </div>
-
-          <div>
-            <NewPost changeFetchFlag={changeFetchFlag} />
-          </div>
-        </fieldset>
-      </Selected.Provider>
-    </div>
+    <BrowserRouter>
+      <React.Fragment>
+        <div className="header">
+          <Header />
+        </div>
+        <div className="product">
+          <PageRoutes />
+        </div>
+      </React.Fragment>
+    </BrowserRouter>
   );
 }
 

@@ -1,33 +1,40 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import Comment from "../Comment/Comment";
 import "./PostDetails.css";
 
 const PostDetails = (props) => {
   const [postDetail, setPostDetail] = useState({});
+  const navigate = useNavigate();
 
+  const params = useParams();
   useEffect(() => {
-    axios
-      .get("http://localhost:8080/api/v1/posts/" + props.id + "/comments")
-      .then((response) => {
-        console.log(response.data);
-        setPostDetail(response.data);
-        console.log(postDetail);
-      })
-      .catch((err) => console.log(err.message));
-  }, [props.id]);
+    if (params.id) {
+      axios
+        .get(
+          "http://localhost:8080/api/v1/posts/" + params.post_id + "/comments"
+        )
+        .then((response) => {
+          console.log(response.data);
+          setPostDetail(response.data);
+          console.log(postDetail);
+        })
+        .catch((err) => console.log(err.message));
+    }
+  }, [params.post_id]);
 
-  const deleteButtonClicked = (id) => {
+  const deleteButtonClicked = (post_id) => {
     axios
-      .delete("http://localhost:8080/api/v1/posts/" + id)
+      .delete("http://localhost:8080/api/v1/posts/" + post_id)
       .then((response) => {
-        props.changeFetchFlag();
+        navigate("/posts");
       })
       .catch((err) => console.log(err.message));
   };
 
   let postDetailsDisplay = null;
-  if (props.id != 0) {
+  if (params.post_id) {
     postDetailsDisplay = (
       <div className="PostDetail">
         <div>Post Detail</div>
@@ -48,7 +55,7 @@ const PostDetails = (props) => {
         </div>
         <button
           onClick={() => {
-            deleteButtonClicked(props.id);
+            deleteButtonClicked(params.post_id);
           }}
         >
           Delete

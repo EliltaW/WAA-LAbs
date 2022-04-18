@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import "./NewPost.css";
 
 const NewPost = (props) => {
@@ -16,6 +17,7 @@ const NewPost = (props) => {
   //   setPostState(updatePost);
   // };
 
+  const navigate = useNavigate();
   const newPostForm = useRef();
 
   const addButtonClicked = (e) => {
@@ -27,7 +29,7 @@ const NewPost = (props) => {
     };
     axios.post("http://localhost:8080/api/v1/posts", post).then((response) => {
       // setPostState({ post_title: "", author_name: "" });
-      props.changeFetchFlag();
+      navigate("/posts");
     });
   };
   return (

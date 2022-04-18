@@ -1,6 +1,8 @@
 import Post from "../../Components/Post/post";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
+import PostDetails from "../../Components/PostDetails/PostDetails";
 
 const Posts = (props) => {
   const [postsState, setPostsState] = useState([
@@ -26,21 +28,26 @@ const Posts = (props) => {
 
   const postList = postsState.map((post) => {
     return (
-      <div>
+      <Link to={`${post.post_id}`}>
         <Post
           title={post.post_title}
           author={post.author_name}
           id={post.post_id}
           key={post.post_id}
-          onClick={props.onClick}
-          // handleClickedPost={props.handleClickedPost}
-          // setSelected={() => {
-          //   props.setSelected(post.post_id);
-          // }}
         />
-      </div>
+      </Link>
     );
   });
-  return postList;
+  return (
+    <div>
+      {postList}
+      <PostDetails />
+    </div>
+  );
 };
 export default Posts;
+
+// handleClickedPost={props.handleClickedPost}
+// setSelected={() => {
+//   props.setSelected(post.post_id);
+// }}
